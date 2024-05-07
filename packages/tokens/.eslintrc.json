@@ -1,0 +1,3 @@
+{
+    "extends": "@pandora-box/eslint-config"
+}

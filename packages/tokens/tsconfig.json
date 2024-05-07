@@ -1,0 +1,4 @@
+{
+  "extends": "@pandora-box/ts-config/base.json",
+  "include": ["src"],
+}
