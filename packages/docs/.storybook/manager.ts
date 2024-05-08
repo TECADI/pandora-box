@@ -7,7 +7,6 @@ const theme = create({
 
   base: 'dark',
   brandTitle: 'Logi360 logo',
-  brandImage: 'https://i.ibb.co/0KgpVQK/Frame-355.png',
   brandTarget: '_self',
 })
 
