@@ -6,7 +6,7 @@ import {
   lineHeights,
   radii,
   space,
-} from '@pandora-box/design-system'
+} from '@pandora-box-tecadi/design-system'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
 export const {

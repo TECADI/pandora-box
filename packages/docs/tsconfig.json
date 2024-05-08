@@ -1,4 +1,4 @@
 {
-  "extends": "@pandora-box/ts-config/react.json",
+  "extends": "@pandora-box-tecadi/ts-config/react.json",
   "include": ["src"],
 }

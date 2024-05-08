@@ -1,5 +1,5 @@
 {
-  "name": "@pandora-box/docs",
+  "name": "@pandora-box-tecadi/docs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,10 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
-    "@pandora-box/design-system": "*",
-    "@pandora-box/desing-ui-react": "*",
-    "@pandora-box/eslint-config": "*",
-    "@pandora-box/ts-config": "*",
+    "@pandora-box-tecadi/design-system": "*",
+    "@pandora-box-tecadi/desing-ui-react": "*",
+    "@pandora-box-tecadi/eslint-config": "*",
+    "@pandora-box-tecadi/ts-config": "*",
     "phosphor-react": "^1.4.1",
     "polished": "^4.3.1",
     "react": "^18.2.0",

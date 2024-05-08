@@ -1,5 +1,5 @@
 {
-  "name": "@pandora-box/desing-ui-react",
+  "name": "@pandora-box-tecadi/desing-ui-react",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@pandora-box/design-system": "*",
-    "@pandora-box/eslint-config": "*",
-    "@pandora-box/ts-config": "*",
+    "@pandora-box-tecadi/design-system": "*",
+    "@pandora-box-tecadi/eslint-config": "*",
+    "@pandora-box-tecadi/ts-config": "*",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
     "react": "^18.2.0",

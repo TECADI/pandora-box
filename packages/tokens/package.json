@@ -1,5 +1,5 @@
 {
-  "name": "@pandora-box/design-system",
+  "name": "@pandora-box-tecadi/design-system",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -16,8 +16,8 @@
   "devDependencies": {
     "tsup": "^8.0.2",
     "typescript": "^5.4.5",
-    "@pandora-box/ts-config": "*",
-    "@pandora-box/eslint-config": "*"
+    "@pandora-box-tecadi/ts-config": "*",
+    "@pandora-box-tecadi/eslint-config": "*"
 
   }
 }

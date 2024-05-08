@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Text, TextProps } from '@pandora-box/desing-ui-react'
+import { Text, TextProps } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
   title: 'Typography/Text',

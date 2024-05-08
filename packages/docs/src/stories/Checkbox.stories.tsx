@@ -4,7 +4,7 @@ import {
   Text,
   Checkbox,
   CheckboxProps,
-} from '@pandora-box/desing-ui-react'
+} from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
   title: 'Typography/Checkbox',

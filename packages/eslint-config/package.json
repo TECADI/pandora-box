@@ -1,5 +1,5 @@
 {
-  "name": "@pandora-box/eslint-config",
+  "name": "@pandora-box-tecadi/eslint-config",
   "license": "MIT",
   "private": true,
   "main": "index.js",

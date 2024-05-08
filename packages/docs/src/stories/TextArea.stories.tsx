@@ -4,7 +4,7 @@ import {
   Text,
   TextArea,
   TextAreaProps,
-} from '@pandora-box/desing-ui-react'
+} from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
   title: 'Typography/Text Area',

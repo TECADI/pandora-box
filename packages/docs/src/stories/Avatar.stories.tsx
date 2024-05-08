@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Avatar, AvatarProps } from '@pandora-box/desing-ui-react'
+import { Avatar, AvatarProps } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
   title: 'Typography/Avatar',

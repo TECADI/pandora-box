@@ -1,4 +1,4 @@
-import { colors } from '@pandora-box/design-system'
+import { colors } from '@pandora-box-tecadi/design-system'
 import { getContrast } from 'polished'
 import '../styles/colors-grid.css'
 

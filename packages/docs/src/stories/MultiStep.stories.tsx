@@ -1,5 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, MultiStep, MultiStepProps } from '@pandora-box/desing-ui-react'
+import {
+  Box,
+  MultiStep,
+  MultiStepProps,
+} from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
   title: 'Typography/Multi Step',
