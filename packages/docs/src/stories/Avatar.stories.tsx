@@ -5,7 +5,7 @@ export default {
   title: 'Typography/Avatar',
   component: Avatar,
   args: {
-    src: 'https://github.com/ManuelMolina02.png',
+    src: 'https://github.com/TECADI.png',
     alt: 'Manuel Molina',
   },
 } as Meta<AvatarProps>
