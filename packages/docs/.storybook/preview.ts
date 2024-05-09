@@ -9,6 +9,11 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    options: {
+      storySort: {
+        order: ['Home', 'Design System', 'Typography', 'Surfaces'],
+      },
+    },
     /*
     docs: {
       theme: themes.dark,

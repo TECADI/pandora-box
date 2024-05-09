@@ -7,6 +7,7 @@ const theme = create({
 
   base: 'dark',
   brandTitle: 'Logi360 logo',
+  brandUrl: 'https://tecadi.github.io/pandora-box/?path=/docs/home--docs',
   brandImage: 'https://i.ibb.co/0KgpVQK/logo-pandora.png',
   brandTarget: '_self',
 })
