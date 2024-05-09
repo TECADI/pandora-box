@@ -5,7 +5,7 @@ export const Text = styled('p', {
   fontFamily: '$default',
   lineHeight: '$base',
   margin: 0,
-  color: '$gray700',
+  color: '$teal700',
 
   variants: {
     size: {
@@ -23,10 +23,17 @@ export const Text = styled('p', {
       '8xl': { fontSize: '$8xl' },
       '9xl': { fontSize: '$9xl' },
     },
+
+    fontWeights: {
+      normal: { fontWeight: '$normal' },
+      medium: { fontWeight: '$medium' },
+      bold: { fontWeight: '$bold' },
+    },
   },
 
   defaultVariants: {
     size: 'md',
+    fontWeights: 'normal',
   },
 })
 

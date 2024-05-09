@@ -20,7 +20,9 @@ export default {
           gap: '$2',
         }}
       >
-        <Text size="sm">Username</Text>
+        <Text size="sm" fontWeights={'medium'}>
+          Username
+        </Text>
         {Story()}
       </Box>
     ),
