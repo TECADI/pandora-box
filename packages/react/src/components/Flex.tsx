@@ -1,12 +1,12 @@
 import { ComponentProps } from 'react'
 import { styled } from '../styles'
 
-export const Box = styled('div', {
+export const Flex = styled('div', {
   padding: '$6',
   borderRadius: '$md',
   backgroundColor: '$white',
 })
 
-export interface BoxProps extends ComponentProps<typeof Box> {}
+export interface FlexProps extends ComponentProps<typeof Flex> {}
 
-Box.displayName = 'Box'
+Flex.displayName = 'Flex'
