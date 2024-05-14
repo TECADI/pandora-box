@@ -10,10 +10,22 @@ export default {
   argTypes: {
     children: {
       control: {
-        type: null,
+        type: 'text',
       },
     },
   },
-} as unknown | Meta<BoxProps>
+  decorators: [
+    (Story) => (
+      <Box
+        css={{
+          backgroundColor: '$slate200',
+          height: '160px',
+        }}
+      >
+        {Story()}
+      </Box>
+    ),
+  ],
+} as Meta<BoxProps>
 
 export const Primary: StoryObj<BoxProps> = {}

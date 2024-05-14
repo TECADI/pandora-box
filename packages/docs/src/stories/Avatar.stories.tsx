@@ -6,7 +6,7 @@ export default {
   component: Avatar,
   args: {
     src: 'https://github.com/TECADI.png',
-    alt: 'Manuel Molina',
+    alt: 'Tecadi Logo',
   },
 } as Meta<AvatarProps>
 
