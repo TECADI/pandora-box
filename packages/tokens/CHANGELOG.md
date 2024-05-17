@@ -1,0 +1,13 @@
+# @pandora-box-tecadi/design-system
+
+## 2.0.0
+
+### Major Changes
+
+- test
+
+### Patch Changes
+
+- ee4f5f2: active pandora-box
+- other test
+- add components and fix styles

@@ -12,13 +12,9 @@ const preview: Preview = {
     options: {
       storySort: {
         order: ['Home', 'Design System', 'Typography', 'Surfaces'],
+        alphabetically: true,
       },
     },
-    /*
-    docs: {
-      theme: themes.dark,
-    },
-    */
   },
 }
 
