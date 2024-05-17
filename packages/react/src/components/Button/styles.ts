@@ -1,7 +1,19 @@
-import { ComponentProps, ElementType } from 'react'
-import { styled } from '../styles'
+import { styled, keyframes } from '../../styles'
+import { ImSpinner6 } from 'react-icons/im'
 
-export const Button = styled('button', {
+const spin = keyframes({
+  from: { transform: 'rotate(0deg)' },
+  to: { transform: 'rotate(360deg)' },
+})
+
+export const LoadingSpinner = styled(ImSpinner6, {
+  animation: `${spin} 1s linear infinite`,
+  width: '$4',
+  height: '$4',
+  color: '$slate700',
+})
+
+export const ButtonContainer = styled('button', {
   all: 'unset',
   borderRadius: '$sm',
   fontSize: '$sm',
@@ -46,20 +58,6 @@ export const Button = styled('button', {
           color: '$slate600',
         },
       },
-      secondary: {
-        backgroundColor: '$teal500',
-        color: '$white',
-        '&:hover': {
-          backgroundColor: '$teal600',
-        },
-      },
-      tertiary: {
-        backgroundColor: '$white',
-        border: '2px solid $slate500',
-        '&:hover': {
-          backgroundColor: '$slate100',
-        },
-      },
     },
 
     size: {
@@ -83,9 +81,3 @@ export const Button = styled('button', {
     size: 'md',
   },
 })
-
-export interface ButtonProps extends ComponentProps<typeof Button> {
-  as?: ElementType
-}
-
-Button.displayName = 'Button'
