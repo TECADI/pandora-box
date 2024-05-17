@@ -1,5 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, BoxProps, Text } from '@pandora-box-tecadi/desing-ui-react'
+import {
+  Box,
+  BoxProps,
+  Container,
+  Text,
+} from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
   title: 'Surfaces/Box',
@@ -16,14 +21,14 @@ export default {
   },
   decorators: [
     (Story) => (
-      <Box
+      <Container
         css={{
           backgroundColor: '$slate200',
           height: '160px',
         }}
       >
         {Story()}
-      </Box>
+      </Container>
     ),
   ],
 } as Meta<BoxProps>

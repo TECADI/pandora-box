@@ -15,10 +15,7 @@ export default {
 
   argTypes: {
     onClick: { action: 'clicked' },
-    variant: {
-      options: ['primary', 'secondary', 'tertiary'],
-      control: { type: 'inline-radio' },
-    },
+
     size: {
       options: ['sm', 'md', 'lg'],
       control: { type: 'inline-radio' },
@@ -26,22 +23,13 @@ export default {
     disabled: {
       control: { type: 'boolean' },
     },
+    loading: {
+      control: { type: 'boolean' },
+    },
   },
 } as Meta<ButtonProps>
 
 export const Primary: StoryObj<ButtonProps> = {}
-
-export const Secondary: StoryObj<ButtonProps> = {
-  args: {
-    variant: 'secondary',
-  },
-}
-
-export const Tertiary: StoryObj<ButtonProps> = {
-  args: {
-    variant: 'tertiary',
-  },
-}
 
 export const WithIcon: StoryObj<ButtonProps> = {
   args: {
@@ -57,5 +45,12 @@ export const WithIcon: StoryObj<ButtonProps> = {
 export const Disabled: StoryObj<ButtonProps> = {
   args: {
     disabled: true,
+  },
+}
+
+export const Loading: StoryObj<ButtonProps> = {
+  args: {
+    disabled: true,
+    loading: true,
   },
 }
