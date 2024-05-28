@@ -122,3 +122,46 @@ export const colors = {
   red900: '#7f1d1d',
   red950: '#450a0a',
 }
+
+export const variants = {
+  primary: {
+    backgroundColor: '#1b83fe',
+    color: colors.blue50,
+  },
+  success: {
+    backgroundColor: '#17c653',
+    color: colors.green50,
+  },
+  danger: {
+    backgroundColor: '#f8285a',
+    color: colors.red50,
+  },
+  warning: {
+    backgroundColor: '#f6c000',
+    color: colors.amber50,
+  },
+  info: {
+    backgroundColor: '#7239ea',
+    color: colors.blue50,
+  },
+  'primary-light': {
+    backgroundColor: '#e9f3ff',
+    color: '#1b84ff',
+  },
+  'success-light': {
+    backgroundColor: '#dfffea',
+    color: '#17c653',
+  },
+  'danger-light': {
+    backgroundColor: '#ffeef3',
+    color: '#f8285a',
+  },
+  'warning-light': {
+    backgroundColor: '#fff8dd',
+    color: colors.amber600,
+  },
+  'info-light': {
+    backgroundColor: '#f8f5ff',
+    color: '#7239ea',
+  },
+}

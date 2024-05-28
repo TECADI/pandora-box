@@ -7,27 +7,18 @@ export default {
   args: {
     children: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     size: 'md',
+    as: 'h2',
   },
   argTypes: {
     size: {
-      options: ['sm', 'md', 'lg', '2xl', '4xl', '5xl', '6xl'],
+      options: ['sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl'],
+      control: { type: 'inline-radio' },
+    },
+    as: {
+      options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span'],
       control: { type: 'inline-radio' },
     },
   },
 } as Meta<HeadingProps>
 
 export const Primary: StoryObj<HeadingProps> = {}
-export const Custom: StoryObj<HeadingProps> = {
-  args: {
-    as: 'h1',
-    children: 'Heading 1',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'Por padrão o heading é um `h2`, mas você pode mudar o elemento HTML com a prop `as`.',
-      },
-    },
-  },
-}

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button, ButtonProps } from '@pandora-box-tecadi/desing-ui-react'
-import { ArrowRight } from 'phosphor-react'
+// import { ArrowRight } from 'phosphor-react'
 
 export default {
   title: 'Typography/Button',
@@ -8,9 +8,9 @@ export default {
 
   args: {
     children: 'Click me',
-    variant: 'primary',
+    variant: 'info',
     size: 'md',
-    disabled: false,
+    // disabled: false,
   },
 
   argTypes: {
@@ -20,16 +20,34 @@ export default {
       options: ['sm', 'md', 'lg'],
       control: { type: 'inline-radio' },
     },
+
+    variant: {
+      options: [
+        'success',
+        'danger',
+        'warning',
+        'info',
+        'success-light',
+        'danger-light',
+        'warning-light',
+        'info-light',
+      ],
+      control: { type: 'radio' },
+    },
+
+    /*
     disabled: {
       control: { type: 'boolean' },
     },
     loading: {
       control: { type: 'boolean' },
     },
+    */
   },
 } as Meta<ButtonProps>
 
 export const Primary: StoryObj<ButtonProps> = {}
+/*
 
 export const WithIcon: StoryObj<ButtonProps> = {
   args: {
@@ -54,3 +72,5 @@ export const Loading: StoryObj<ButtonProps> = {
     loading: true,
   },
 }
+
+*/

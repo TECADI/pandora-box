@@ -1,3 +1,5 @@
+/*
+
 import { ComponentProps, forwardRef, ElementRef } from 'react'
 import { Input, Prefix, TextInputContainer } from './styles'
 
@@ -18,3 +20,9 @@ export const TextInput = forwardRef<ElementRef<typeof Input>, TextInputProps>(
 )
 
 TextInput.displayName = 'TextInput'
+
+*/
+
+export function TextInput() {
+  return <div></div>
+}
