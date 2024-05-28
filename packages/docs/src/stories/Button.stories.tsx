@@ -10,7 +10,7 @@ export default {
     children: 'Click me',
     variant: 'info',
     size: 'md',
-    // disabled: false,
+    disabled: false,
   },
 
   argTypes: {
@@ -23,10 +23,12 @@ export default {
 
     variant: {
       options: [
+        'primary',
         'success',
         'danger',
         'warning',
         'info',
+        'primary-light',
         'success-light',
         'danger-light',
         'warning-light',
@@ -35,14 +37,13 @@ export default {
       control: { type: 'radio' },
     },
 
-    /*
-    disabled: {
-      control: { type: 'boolean' },
-    },
     loading: {
       control: { type: 'boolean' },
     },
-    */
+
+    disabled: {
+      control: { type: 'boolean' },
+    },
   },
 } as Meta<ButtonProps>
 
