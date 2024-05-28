@@ -1,29 +1,22 @@
-import { ComponentProps } from 'react'
-import { HeaderContainer, Row } from './styles'
-import { Text } from '../Text'
-import { Avatar } from '../Avatar'
-import { FaFileLines } from 'react-icons/fa6'
+import { BreadCrumb } from '../BreadCrumb'
+import { HeaderMenu } from '../HeaderMenu'
+import { HeaderComponent } from './styles'
 
-export interface HeaderProps extends ComponentProps<typeof HeaderContainer> {}
-
-export function Header(props: HeaderProps) {
-  return (
-    <HeaderContainer {...props}>
-      <Row>
-        <FaFileLines size={26} />
-        <Row>
-          <Text size={'lg'} fontWeights={'medium'}>
-            Header
-          </Text>
-          |<Text size={'md'}>Header</Text>
-        </Row>
-      </Row>
-
-      <Row>
-        <Avatar src="https://github.com/TECADI.png" />
-      </Row>
-    </HeaderContainer>
-  )
+export interface HeaderProps {
+  breadcrumb: {
+    icon: React.ReactNode
+    page: string
+    desc: string
+  }
+  userMenu: React.ReactNode
 }
 
-Header.displayName = 'Header'
+export function Header({ breadcrumb, userMenu }: HeaderProps) {
+  const { icon, page, desc } = breadcrumb
+  return (
+    <HeaderComponent>
+      <BreadCrumb icon={icon} page={page} desc={desc} />
+      <HeaderMenu>{userMenu}</HeaderMenu>
+    </HeaderComponent>
+  )
+}
