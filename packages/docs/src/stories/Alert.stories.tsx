@@ -8,24 +8,31 @@ export default {
   args: {
     title: 'Alert Title',
     description: 'Alert Description',
+    border: 'none',
     variant: 'primary',
+    hasIcon: true,
   },
 
   argTypes: {
-    onClick: { action: 'clicked' },
-
+    hasIcon: {
+      control: { type: 'boolean' },
+    },
+    border: {
+      options: ['none', 'solid', 'dashed', 'dotted'],
+      control: { type: 'inline-radio' },
+    },
     variant: {
       options: [
+        'primary',
         'success',
         'danger',
         'warning',
         'info',
-        'primary',
+        'primary-light',
         'success-light',
         'danger-light',
         'warning-light',
         'info-light',
-        'primary-light',
       ],
       control: { type: 'radio' },
     },
