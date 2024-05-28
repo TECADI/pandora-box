@@ -7,33 +7,18 @@ export default {
   args: {
     children: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     size: 'md',
+    as: 'span',
   },
   argTypes: {
     size: {
-      options: [
-        'xs',
-        'xxs',
-        'sm',
-        'md',
-        'lg',
-        'xl',
-        '2xl',
-        '4xl',
-        '5xl',
-        '6xl',
-        '7xl',
-        '8xl',
-        '9xl',
-      ],
+      options: ['sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl'],
+      control: { type: 'inline-radio' },
+    },
+    as: {
+      options: ['span', 'p'],
       control: { type: 'inline-radio' },
     },
   },
 } as Meta<TextProps>
 
 export const Primary: StoryObj<TextProps> = {}
-export const Custom: StoryObj<TextProps> = {
-  args: {
-    as: 'strong',
-    children: 'Heading 1',
-  },
-}
