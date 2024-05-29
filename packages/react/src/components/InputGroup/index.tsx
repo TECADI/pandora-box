@@ -1,12 +1,4 @@
-import {
-  InputGroupComponent,
-  Input,
-  Label,
-  InputTitle,
-  Error,
-  TextArea,
-  Select,
-} from './styles'
+import { InputGroupComponent, Label, InputTitle, Error } from './styles'
 import { FaCircleInfo } from 'react-icons/fa6'
 import { Tooltip } from 'antd'
 export interface InputGroupProps {
@@ -14,55 +6,16 @@ export interface InputGroupProps {
   label?: string
   required?: boolean
   info?: string
-
   error?: string
-  placeholder?: string
-  options?: {
-    value: string
-    label: string
-  }[]
-
-  value?: string
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  onChange?: (value: any) => void
-
-  size?: 'sm' | 'md' | 'lg'
-  // variant?: 'default' | 'ghost'
-  type?: 'text' | 'password' | 'email' | 'number' | 'tel' | 'date'
-  as?: 'input' | 'textarea' | 'checkbox' | 'radio' | 'select' | 'multi-select'
-}
-
-const InputComponent = (props: InputGroupProps) => {
-  switch (props.as) {
-    case 'textarea':
-      return <TextArea {...props} />
-    case 'select':
-      return (
-        <Select
-          name={props.name}
-          defaultValue={props.value}
-          onChange={props.onChange}
-          options={props.options}
-        />
-      )
-    default:
-      return <Input {...props} />
-  }
+  children: React.ReactNode
 }
 
 export function InputGroup({
   label,
   required,
   info,
-  name,
-  onChange,
-  placeholder,
-  value,
   error,
-  as,
-  options,
-  type = 'text',
-  size = 'md',
+  children,
 }: InputGroupProps) {
   return (
     <>
@@ -80,19 +33,7 @@ export function InputGroup({
           )}
         </InputTitle>
 
-        {
-          <InputComponent
-            name={name}
-            onChange={onChange}
-            placeholder={placeholder}
-            value={value}
-            error={error}
-            type={type}
-            size={size}
-            as={as}
-            options={options}
-          />
-        }
+        {children}
       </InputGroupComponent>
 
       <Error>{error}</Error>
