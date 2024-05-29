@@ -1,6 +1,6 @@
 import { styled, theme } from '../../styles'
 import { InputGroupProps } from '.'
-import { Select as SelectAntd } from 'antd'
+
 export const InputGroupComponent = styled.div`
   display: flex;
   flex-direction: column;
@@ -32,16 +32,6 @@ export const Input = styled.input<InputGroupProps>`
   border-radius: 0.25rem;
   font-size: 1rem;
 `
-
-export const TextArea = styled.textarea<InputGroupProps>`
-  all: unset;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  font-size: 1rem;
-`
-
-export const Select = styled(SelectAntd)<InputGroupProps>``
 
 export const Error = styled.span`
   font-size: 0.875rem;
