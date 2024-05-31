@@ -11,7 +11,14 @@ const preview: Preview = {
     },
     options: {
       storySort: {
-        order: ['Home', 'Design System', 'Typography', 'Surfaces'],
+        order: [
+          'Home',
+          'Design System',
+          'Layout',
+          'Components',
+          'Data Entry',
+          'Typography',
+        ],
         alphabetically: true,
       },
     },

@@ -1,21 +1,27 @@
-export * from './components/Button'
-export * from './components/TextInput'
-export * from './components/Header'
-export * from './components/Alert'
-
-// new components
+// Layout
 export * from './components/Flex'
-export * from './components/Text'
-export * from './components/Heading'
-export * from './components/InputGroup'
-export * from './components/BreadCrumb'
-export * from './components/Badge'
 export * from './components/Card'
-export * from './components/Checkbox'
+export * from './components/Header'
+export * from './components/Sidebar'
+
+// Components
+export * from './components/Alert'
+export * from './components/Avatar'
+export * from './components/Badge'
+export * from './components/BreadCrumb'
+export * from './components/Button'
+
+// Data Entry
+export * from './components/Input'
 export * from './components/Radio'
+export * from './components/Checkbox'
 export * from './components/Select'
 export * from './components/MultiSelect'
-export * from './components/Input'
+export * from './components/InputGroup'
 
-// new styles
+// Typography
+export * from './components/Text'
+export * from './components/Heading'
+
+// Styles
 export * from './styles'
