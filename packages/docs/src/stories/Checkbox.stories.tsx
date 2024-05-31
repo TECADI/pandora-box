@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Checkbox, CheckboxProps } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
-  title: 'Typography/Checkbox',
+  title: 'Data Entry/Checkbox',
   component: Checkbox,
   args: {
     name: 'name',

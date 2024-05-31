@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Badge, BadgeProps } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
-  title: 'Typography/Badge',
+  title: 'Components/Badge',
   component: Badge,
 
   args: {

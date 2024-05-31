@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Alert, AlertProps } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
-  title: 'Typography/Alert',
+  title: 'Components/Alert',
   component: Alert,
 
   args: {

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Flex, FlexProps, Text } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
-  title: 'Surfaces/Flex',
+  title: 'Layout/Flex',
   component: Flex,
   args: {
     children: (

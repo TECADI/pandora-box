@@ -6,7 +6,7 @@ import {
 } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
-  title: 'Typography/MultiSelect',
+  title: 'Data Entry/MultiSelect',
   component: MultiSelect,
   args: {
     size: 'md',

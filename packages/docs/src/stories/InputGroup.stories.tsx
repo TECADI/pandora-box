@@ -5,7 +5,7 @@ import {
 } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
-  title: 'Typography/InputGroup',
+  title: 'Components/InputGroup',
   component: InputGroup,
   args: {
     name: 'name',

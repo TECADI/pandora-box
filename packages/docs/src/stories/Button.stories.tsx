@@ -3,7 +3,7 @@ import { Button, ButtonProps } from '@pandora-box-tecadi/desing-ui-react'
 // import { ArrowRight } from 'phosphor-react'
 
 export default {
-  title: 'Typography/Button',
+  title: 'Components/Button',
   component: Button,
 
   args: {
