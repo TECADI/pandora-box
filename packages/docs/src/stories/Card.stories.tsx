@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Card, CardProps, Text } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
-  title: 'Surfaces/Card',
+  title: 'Layout/Card',
   component: Card,
   args: {
     children: (

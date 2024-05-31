@@ -6,7 +6,7 @@ import {
 } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
-  title: 'Typography/Select',
+  title: 'Data Entry/Select',
   component: Select,
   args: {
     size: 'md',

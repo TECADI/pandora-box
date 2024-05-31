@@ -6,7 +6,7 @@ import {
 import { FaFile } from 'react-icons/fa6'
 
 export default {
-  title: 'Typography/BreadCrumb',
+  title: 'Components/BreadCrumb',
   component: BreadCrumb,
   args: {
     icon: <FaFile size={22} />,

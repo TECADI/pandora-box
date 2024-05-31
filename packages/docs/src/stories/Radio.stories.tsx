@@ -6,7 +6,7 @@ import {
 } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
-  title: 'Typography/Radio',
+  title: 'Data Entry/Radio',
   component: Radio,
   args: {
     name: 'name',

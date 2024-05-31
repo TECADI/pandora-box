@@ -1,5 +1,11 @@
 # @pandora-box-tecadi/design-system
 
+## 3.0.0
+
+### Major Changes
+
+- upgrade library
+
 ## 2.0.1
 
 ### Patch Changes
