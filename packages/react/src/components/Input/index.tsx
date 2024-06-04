@@ -1,10 +1,12 @@
+import { Sizes } from '../../utils/types'
 import { InputComponent } from './styles'
 
 export interface InputProps {
   value?: string
   onChange?: (value: Event) => void
+  placeholder?: string
 
-  size?: 'sm' | 'md' | 'lg'
+  size?: Sizes
   direction?: 'row' | 'column'
 }
 

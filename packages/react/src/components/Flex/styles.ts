@@ -8,6 +8,7 @@ export const FlexComponent = styled.div<FlexProps>`
     align = 'flex-start',
     wrap = 'nowrap',
     gap = '0',
+    fullSize = false,
   }) => `
   display: flex;
   flex-direction: ${direction};
@@ -16,5 +17,6 @@ export const FlexComponent = styled.div<FlexProps>`
   flex-wrap: ${wrap};
   gap: ${gap};
 
+  ${fullSize ? 'width: 100%; height: 100%;' : ''}
 `}
 `

@@ -1,3 +1,4 @@
+import { Sizes } from '../../utils/types'
 import { RadioComponent, RadioItem } from './styles'
 
 export interface RadioProps {
@@ -9,7 +10,7 @@ export interface RadioProps {
   value?: string
   onChange?: (value: Event) => void
 
-  size?: 'sm' | 'md' | 'lg'
+  size?: Sizes
   direction?: 'row' | 'column'
 }
 

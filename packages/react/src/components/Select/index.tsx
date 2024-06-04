@@ -1,3 +1,4 @@
+import { Sizes } from '../../utils/types'
 import { SelectComponent } from './styles'
 
 export interface SelectProps {
@@ -9,7 +10,7 @@ export interface SelectProps {
   value?: string
   onChange?: (value: Event) => void
 
-  size?: 'sm' | 'md' | 'lg'
+  size?: Sizes
   direction?: 'row' | 'column'
 }
 

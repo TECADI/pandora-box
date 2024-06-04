@@ -144,6 +144,43 @@ export const variants = {
     backgroundColor: '#7239ea',
     color: colors.blue50,
   },
+  magenta: {
+    backgroundColor: '#c41d7f',
+    color: '#fff0f6',
+  },
+  volcano: {
+    backgroundColor: '#d4380d',
+    color: '#fff2e8',
+  },
+  cyan: {
+    backgroundColor: '#08979c',
+    color: '#e6fffb',
+  },
+  geekblue: {
+    backgroundColor: '#1d39c4',
+    color: '#fcffe6',
+  },
+  lime: {
+    backgroundColor: '#7cb305',
+    color: '#fcffe6',
+  },
+  gold: {
+    backgroundColor: '#d48806',
+    color: '#fffbe6',
+  },
+  orange: {
+    backgroundColor: '#d46b08',
+    color: '#fff7e6',
+  },
+  teal: {
+    backgroundColor: '#14b8a6',
+    color: '#f0fdfa',
+  },
+  skyblue: {
+    backgroundColor: '#1890ff',
+    color: '#e6f7ff',
+  },
+
   'primary-light': {
     backgroundColor: '#e9f3ff',
     color: '#1b84ff',
@@ -163,5 +200,41 @@ export const variants = {
   'info-light': {
     backgroundColor: '#f8f5ff',
     color: '#7239ea',
+  },
+  'magenta-light': {
+    backgroundColor: '#fff0f6',
+    color: '#c41d7f',
+  },
+  'volcano-light': {
+    backgroundColor: '#fff2e8',
+    color: '#d4380d',
+  },
+  'cyan-light': {
+    backgroundColor: '#e6fffb',
+    color: '#08979c',
+  },
+  'geekblue-light': {
+    backgroundColor: '#f0f5ff',
+    color: '#1d39c4',
+  },
+  'lime-light': {
+    backgroundColor: '#fcffe6',
+    color: '#7cb305',
+  },
+  'gold-light': {
+    backgroundColor: '#fffbe6',
+    color: '#d48806',
+  },
+  'orange-light': {
+    backgroundColor: '#fff7e6',
+    color: '#d46b08',
+  },
+  'teal-light': {
+    backgroundColor: '#f0fdfa',
+    color: '#14b8a6',
+  },
+  'skyblue-light': {
+    backgroundColor: '#e6f7ff',
+    color: '#1890ff',
   },
 }

@@ -1,3 +1,4 @@
+import { Sizes } from '../../utils/types'
 import { CheckboxComponent, CheckboxItem } from './styles'
 
 export interface CheckboxProps {
@@ -16,7 +17,7 @@ export interface CheckboxProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onChange?: (value: any) => void
 
-  size?: 'sm' | 'md' | 'lg'
+  size?: Sizes
   direction?: 'row' | 'column'
   // variant?: 'default' | 'ghost'
 }
