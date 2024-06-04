@@ -3,6 +3,7 @@ export * from './components/Flex'
 export * from './components/Card'
 export * from './components/Header'
 export * from './components/Sidebar'
+// export * from './components/Divider'
 
 // Components
 export * from './components/Alert'
@@ -10,6 +11,7 @@ export * from './components/Avatar'
 export * from './components/Badge'
 export * from './components/BreadCrumb'
 export * from './components/Button'
+export * from './components/Table'
 
 // Data Entry
 export * from './components/Input'
