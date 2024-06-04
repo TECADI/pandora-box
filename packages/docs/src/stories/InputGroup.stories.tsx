@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import {
+  Input,
   InputGroup,
   InputGroupProps,
 } from '@pandora-box-tecadi/desing-ui-react'
@@ -13,7 +14,7 @@ export default {
     required: true,
     info: 'Informe seu nome completo',
     size: 'md',
-    children: <input />,
+    children: <Input />,
   },
   argTypes: {
     onChange: { action: 'changed' },

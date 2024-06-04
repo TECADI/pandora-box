@@ -21,7 +21,7 @@ const sizes = {
 }
 
 export const AvatarComponent = styled.div<AvatarProps>`
-  border-radius: ${(props) => (props.rounded ? '9999px' : '6px')};
+  border-radius: ${({ rounded }) => (rounded ? '9999px' : '6px')};
   background: ${colors.gray200};
 
   display: flex;
@@ -29,16 +29,14 @@ export const AvatarComponent = styled.div<AvatarProps>`
   align-items: center;
   overflow: hidden;
 
-  ${(props) =>
-    props.avatarUrl &&
+  ${({ avatarUrl }) =>
+    avatarUrl &&
     `
-    background: url(${props.avatarUrl});
+    background: url(${avatarUrl});
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   `}
 
-  width: ${(props) => sizes[props.size!].width};
-  height: ${(props) => sizes[props.size!].height};
-  font-size: ${(props) => sizes[props.size!].fontSize};
+  ${({ size }) => sizes[size!]}
 `

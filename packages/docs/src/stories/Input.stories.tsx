@@ -18,6 +18,11 @@ export default {
       control: { type: 'radio' },
       options: ['sm', 'md', 'lg'],
     },
+
+    type: {
+      control: { type: 'radio' },
+      options: ['text', 'password', 'email', 'number', 'tel'],
+    },
   },
 
   decorators: [

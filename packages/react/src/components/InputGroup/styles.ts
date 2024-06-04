@@ -1,5 +1,5 @@
 import { styled, theme } from '../../styles'
-import { InputGroupProps } from '.'
+import { colors } from '@pandora-box-tecadi/design-system'
 
 export const InputGroupComponent = styled.div`
   display: flex;
@@ -23,14 +23,8 @@ export const Label = styled.label`
   gap: 0.25rem;
 
   font-size: 0.875rem;
-  color: #333;
-`
-
-export const Input = styled.input<InputGroupProps>`
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  font-size: 1rem;
+  font-weight: 500;
+  color: ${colors.slate700};
 `
 
 export const Error = styled.span`
