@@ -1,17 +1,8 @@
 import { theme } from '../styles'
+import { Variants } from './types'
 
 interface VariantProps {
-  variant?:
-    | 'primary'
-    | 'success'
-    | 'danger'
-    | 'warning'
-    | 'info'
-    | 'primary-light'
-    | 'success-light'
-    | 'danger-light'
-    | 'warning-light'
-    | 'info-light'
+  variant?: Variants
 }
 
 export const getVariant = ({ variant = 'primary' }: VariantProps) => {

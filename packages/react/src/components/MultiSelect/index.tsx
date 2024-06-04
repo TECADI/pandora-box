@@ -1,3 +1,4 @@
+import { Sizes } from '../../utils/types'
 import { MultiSelectComponent } from './styles'
 
 export interface MultiSelectProps {
@@ -9,7 +10,7 @@ export interface MultiSelectProps {
 
   onChange?: (value: Event) => void
 
-  size?: 'sm' | 'md' | 'lg'
+  size?: Sizes
   mode?: 'multiple' | 'tags' | undefined
 }
 

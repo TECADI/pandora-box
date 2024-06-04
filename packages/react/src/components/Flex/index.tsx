@@ -12,6 +12,7 @@ export interface FlexProps {
   align?: 'flex-start' | 'center' | 'flex-end' | 'stretch' | 'baseline'
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse'
   gap?: string
+  fullSize?: boolean
   style?: React.CSSProperties
 }
 

@@ -1,9 +1,10 @@
+import { Sizes, Variants } from '../../utils/types'
 import { ButtonContainer, LoadingSpinner } from './styles'
 
 export interface ButtonProps {
   children: React.ReactNode
-  variant?: 'primary' | 'success' | 'danger' | 'warning' | 'info'
-  size?: 'sm' | 'md' | 'lg'
+  variant?: Variants
+  size?: Sizes
   disabled?: boolean
   loading?: boolean
   onClick?: () => void

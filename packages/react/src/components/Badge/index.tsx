@@ -1,20 +1,10 @@
+import { Sizes, Variants } from '../../utils/types'
 import { BadgeContainer } from './styles'
-
-type Variant =
-  | 'primary'
-  | 'success'
-  | 'danger'
-  | 'warning'
-  | 'info'
-  | 'success-light'
-  | 'danger-light'
-  | 'warning-light'
-  | 'info-light'
 
 export interface BadgeProps {
   title?: string
-  variant?: Variant
-  size?: 'sm' | 'md' | 'lg'
+  variant?: Variants
+  size?: Sizes
   rounded?: boolean
 }
 

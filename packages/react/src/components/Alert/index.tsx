@@ -5,25 +5,15 @@ import { AlertContainer } from './styles'
 import { FaInfoCircle } from 'react-icons/fa'
 import { IoWarning, IoCloseCircle } from 'react-icons/io5'
 import { FaCircleCheck, FaCircleExclamation } from 'react-icons/fa6'
-
-type Variant =
-  | 'primary'
-  | 'success'
-  | 'danger'
-  | 'warning'
-  | 'info'
-  | 'success-light'
-  | 'danger-light'
-  | 'warning-light'
-  | 'info-light'
+import { Borders, StatusVariants } from '../../utils/types'
 
 export interface AlertProps {
   icon?: React.ReactNode
   hasIcon?: boolean
   title?: string
   description?: string
-  border?: 'solid' | 'dashed' | 'dotted' | 'none'
-  variant?: Variant
+  border?: Borders
+  variant?: StatusVariants
 }
 
 export function Alert({
@@ -33,7 +23,7 @@ export function Alert({
   variant = 'primary',
   border,
 }: AlertProps) {
-  const icon = (variant: Variant) => {
+  const icon = (variant: StatusVariants) => {
     if (variant.includes('primary')) {
       return <FaInfoCircle size={30} />
     } else if (variant.includes('success')) {

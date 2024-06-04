@@ -1,10 +1,11 @@
+import { Sizes } from '../../utils/types'
 import { AvatarComponent } from './styles'
 import { UserOutlined } from '@ant-design/icons'
 
 export interface AvatarProps {
   rounded?: boolean
   avatarUrl?: string
-  size?: 'sm' | 'md' | 'lg'
+  size?: Sizes
 }
 
 export function Avatar({ avatarUrl, rounded, size = 'md' }: AvatarProps) {
