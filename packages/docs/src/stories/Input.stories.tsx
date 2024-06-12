@@ -4,15 +4,22 @@ import {
   Input,
   InputProps,
 } from '@pandora-box-tecadi/desing-ui-react'
+import { Variants } from '../utils/types'
 
 export default {
   title: 'Data Entry/Input',
   component: Input,
   args: {
     size: 'md',
+    colorSchema: 'teal',
   },
   argTypes: {
     onChange: { action: 'changed' },
+
+    colorSchema: {
+      options: Variants,
+      control: { type: 'select' },
+    },
 
     size: {
       control: { type: 'radio' },

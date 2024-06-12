@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Badge, BadgeProps } from '@pandora-box-tecadi/desing-ui-react'
+import { Variants } from '../utils/types'
 
 export default {
   title: 'Components/Badge',
@@ -7,43 +8,19 @@ export default {
 
   args: {
     title: 'Badge Text',
-    variant: 'primary',
+    colorSchema: 'primary',
+    size: 'md',
     rounded: false,
   },
 
   argTypes: {
-    variant: {
-      options: [
-        'primary',
-        'success',
-        'danger',
-        'warning',
-        'info',
-        'magenta',
-        'volcano',
-        'cyan',
-        'geekblue',
-        'lime',
-        'gold',
-        'orange',
-        'teal',
-        'skyblue',
-        'primary-light',
-        'success-light',
-        'danger-light',
-        'warning-light',
-        'info-light',
-        'magenta-light',
-        'volcano-light',
-        'cyan-light',
-        'geekblue-light',
-        'lime-light',
-        'gold-light',
-        'orange-light',
-        'teal-light',
-        'skyblue-light',
-      ],
+    colorSchema: {
+      options: Variants,
       control: { type: 'select' },
+    },
+    size: {
+      options: ['sm', 'md', 'lg'],
+      control: { type: 'inline-radio' },
     },
     rounded: {
       control: { type: 'boolean' },

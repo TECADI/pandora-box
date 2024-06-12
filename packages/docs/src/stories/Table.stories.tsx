@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Table, TableProps } from '@pandora-box-tecadi/desing-ui-react'
+import { Flex, Table, TableProps } from '@pandora-box-tecadi/desing-ui-react'
+import { colors } from '@pandora-box-tecadi/design-system'
+import { Variants } from '../utils/types'
 
 const columns = [
   {
@@ -39,34 +41,38 @@ export default {
   component: Table,
 
   args: {
-    variant: 'primary',
+    colorSchema: 'teal',
     columns,
     dataSource,
   },
 
   argTypes: {
-    variant: {
-      options: [
-        'primary',
-        'success',
-        'danger',
-        'warning',
-        'info',
-        'magenta',
-        'volcano',
-        'cyan',
-        'geekblue',
-        'lime',
-        'gold',
-        'orange',
-        'teal',
-        'skyblue',
-      ],
+    colorSchema: {
+      options: Variants,
       control: { type: 'select' },
     },
     columns: { table: { disable: true } },
     dataSource: { table: { disable: true } },
+
+    fullSize: {
+      control: { type: 'boolean' },
+    },
   },
+
+  decorators: [
+    (Story) => (
+      <Flex
+        style={{
+          width: '100%',
+          height: '100%',
+          backgroundColor: colors.slate200,
+          padding: '1.6rem',
+        }}
+      >
+        {Story()}
+      </Flex>
+    ),
+  ],
 } as Meta<TableProps>
 
 export const Primary: StoryObj<TableProps> = {}

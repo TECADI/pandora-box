@@ -4,6 +4,7 @@ import {
   FloatButtonProps,
 } from '@pandora-box-tecadi/desing-ui-react'
 import { FaFile } from 'react-icons/fa6'
+import { Variants } from '../utils/types'
 
 export default {
   title: 'Components/FloatButton',
@@ -11,7 +12,7 @@ export default {
 
   args: {
     children: <FaFile />,
-    variant: 'primary',
+    colorSchema: 'primary',
     size: 'md',
     disabled: false,
     title: 'Example tooltip title',
@@ -25,37 +26,8 @@ export default {
       control: { type: 'inline-radio' },
     },
 
-    variant: {
-      options: [
-        'primary',
-        'success',
-        'danger',
-        'warning',
-        'info',
-        'magenta',
-        'volcano',
-        'cyan',
-        'geekblue',
-        'lime',
-        'gold',
-        'orange',
-        'teal',
-        'skyblue',
-        'primary-light',
-        'success-light',
-        'danger-light',
-        'warning-light',
-        'info-light',
-        'magenta-light',
-        'volcano-light',
-        'cyan-light',
-        'geekblue-light',
-        'lime-light',
-        'gold-light',
-        'orange-light',
-        'teal-light',
-        'skyblue-light',
-      ],
+    colorSchema: {
+      options: Variants,
       control: { type: 'select' },
     },
 
