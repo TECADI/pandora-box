@@ -15,6 +15,8 @@ export interface TextProps {
     | '5xl'
     | '6xl'
     | '7xl'
+
+  style?: React.CSSProperties
 }
 
 export function Text({ size, color, as = 'span', children }: TextProps) {

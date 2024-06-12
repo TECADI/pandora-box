@@ -3,11 +3,12 @@ import { ButtonContainer, LoadingSpinner } from './styles'
 
 export interface ButtonProps {
   children: React.ReactNode
-  variant?: Variants
+  colorSchema?: Variants
   size?: Sizes
   disabled?: boolean
   loading?: boolean
   onClick?: () => void
+  style?: React.CSSProperties
 }
 
 export function Button({ children, loading, disabled, ...props }: ButtonProps) {

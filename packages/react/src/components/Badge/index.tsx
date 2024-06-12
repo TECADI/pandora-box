@@ -1,9 +1,9 @@
-import { Sizes, Variants } from '../../utils/types'
+import { Sizes, StatusVariants, Variants } from '../../utils/types'
 import { BadgeContainer } from './styles'
 
 export interface BadgeProps {
   title?: string
-  variant?: Variants
+  colorSchema?: Variants | StatusVariants
   size?: Sizes
   rounded?: boolean
 }

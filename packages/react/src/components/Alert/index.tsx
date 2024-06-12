@@ -13,33 +13,33 @@ export interface AlertProps {
   title?: string
   description?: string
   border?: Borders
-  variant?: StatusVariants
+  colorSchema?: StatusVariants
 }
 
 export function Alert({
   hasIcon,
   title,
   description,
-  variant = 'primary',
+  colorSchema = 'primary',
   border,
 }: AlertProps) {
-  const icon = (variant: StatusVariants) => {
-    if (variant.includes('primary')) {
+  const icon = (colorSchema: StatusVariants) => {
+    if (colorSchema.includes('primary')) {
       return <FaInfoCircle size={30} />
-    } else if (variant.includes('success')) {
+    } else if (colorSchema.includes('success')) {
       return <FaCircleCheck size={30} />
-    } else if (variant.includes('danger')) {
+    } else if (colorSchema.includes('danger')) {
       return <IoCloseCircle size={34} />
-    } else if (variant.includes('warning')) {
+    } else if (colorSchema.includes('warning')) {
       return <IoWarning size={34} />
-    } else if (variant.includes('info')) {
+    } else if (colorSchema.includes('info')) {
       return <FaCircleExclamation size={30} />
     }
   }
 
   return (
-    <AlertContainer variant={variant} border={border}>
-      {hasIcon && icon(variant)}
+    <AlertContainer colorSchema={colorSchema} border={border}>
+      {hasIcon && icon(colorSchema)}
       <Flex direction="column">
         {title && <h3>{title}</h3>}
         {description && <p>{description}</p>}

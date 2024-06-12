@@ -1,4 +1,4 @@
-import { Sizes } from '../../utils/types'
+import { Sizes, Variants } from '../../utils/types'
 import { InputComponent, PasswordComponent } from './styles'
 
 type InputTypes = 'text' | 'password' | 'email' | 'number' | 'tel'
@@ -7,6 +7,7 @@ export interface InputProps {
   value?: string
   onChange?: (value: Event) => void
   placeholder?: string
+  colorSchema?: Variants
 
   size?: Sizes
   direction?: 'row' | 'column'
