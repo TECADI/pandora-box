@@ -15,6 +15,7 @@ export interface HeadingProps {
     | '5xl'
     | '6xl'
     | '7xl'
+  style?: React.CSSProperties
 }
 
 export function Heading({ size, color, as = 'h2', children }: HeadingProps) {

@@ -12,11 +12,16 @@ export default {
     icon: <FaFile size={22} />,
     page: 'Page',
     desc: 'Description',
+    size: 'md',
   },
   argTypes: {
     icon: { control: false },
     page: { control: 'text' },
     desc: { control: 'text' },
+    size: {
+      options: ['sm', 'md', 'lg'],
+      control: { type: 'inline-radio' },
+    },
   },
 } as Meta<BreadCrumbProps>
 

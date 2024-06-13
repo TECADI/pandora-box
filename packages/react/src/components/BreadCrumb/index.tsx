@@ -6,13 +6,15 @@ export interface BreadCrumbProps {
   icon: React.ReactNode
   page: string
   desc: string
+  size?: 'sm' | 'md' | 'lg'
+  style?: React.CSSProperties
 }
 
-export function BreadCrumb({ icon, page, desc }: BreadCrumbProps) {
+export function BreadCrumb({ icon, page, desc, ...props }: BreadCrumbProps) {
   return (
-    <BreadCrumbComponent>
+    <BreadCrumbComponent {...props}>
       {icon}
-      <Heading>{`${page} |`}</Heading> <Text>{desc}</Text>
+      <Heading size="xl">{`${page} |`}</Heading> <Text size="lg">{desc}</Text>
     </BreadCrumbComponent>
   )
 }

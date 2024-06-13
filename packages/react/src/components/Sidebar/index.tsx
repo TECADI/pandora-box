@@ -17,7 +17,7 @@ type NavigationItem = {
 
 export interface SidebarProps {
   logoUrl: string
-  asActive?: boolean
+  pageActive?: string
   navigationList: NavigationItem[]
   handlePressItemNavigation: (item: { key: string; keyPath: string[] }) => void
   handleLogout: () => void
@@ -27,7 +27,7 @@ export const Sidebar = ({
   navigationList,
   handlePressItemNavigation,
   handleLogout,
-  asActive,
+  pageActive,
   logoUrl,
 }: SidebarProps) => {
   return (
@@ -38,7 +38,7 @@ export const Sidebar = ({
           {navigationList.map(({ label, key, icon }) => (
             <ListItem
               key={key}
-              activeItem={asActive}
+              activeItem={key === pageActive}
               onClick={() => handlePressItemNavigation({ key, keyPath: [key] })}
             >
               {icon}

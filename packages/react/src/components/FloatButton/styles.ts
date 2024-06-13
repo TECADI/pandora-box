@@ -7,15 +7,15 @@ const sizes: {
   [key: string]: { fontSize: string; padding: string }
 } = {
   sm: {
-    fontSize: '14px',
+    fontSize: '24px',
     padding: '6px',
   },
   md: {
-    fontSize: '22px',
+    fontSize: '30px',
     padding: '8px',
   },
   lg: {
-    fontSize: '30px',
+    fontSize: '36px',
     padding: '10px',
   },
 }
@@ -43,10 +43,11 @@ export const FloatButtonContainer = styled.button<FloatButtonProps>`
 
   &:not(:disabled):hover {
     filter: brightness(
-      ${({ variant }) => (!variant?.includes('light') ? '1.09' : '0.97')}
+      ${({ colorSchema }) =>
+        !colorSchema?.includes('light') ? '1.09' : '0.97'}
     );
   }
 
   ${({ size }) => sizes[size || 'md']}
-  ${({ variant }) => getVariant({ variant })}
+  ${({ colorSchema }) => getVariant({ colorSchema })}
 `

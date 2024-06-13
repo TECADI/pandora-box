@@ -1,14 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button, ButtonProps } from '@pandora-box-tecadi/desing-ui-react'
 // import { ArrowRight } from 'phosphor-react'
+import { BsFillSendFill } from 'react-icons/bs'
+import { Variants } from '../utils/types'
 
 export default {
   title: 'Components/Button',
   component: Button,
 
   args: {
-    children: 'Click me',
-    variant: 'info',
+    children: (
+      <>
+        Enviar <BsFillSendFill />
+      </>
+    ),
+    colorSchema: 'teal',
     size: 'md',
     disabled: false,
   },
@@ -21,38 +27,9 @@ export default {
       control: { type: 'inline-radio' },
     },
 
-    variant: {
-      options: [
-        'primary',
-        'success',
-        'danger',
-        'warning',
-        'info',
-        'magenta',
-        'volcano',
-        'cyan',
-        'geekblue',
-        'lime',
-        'gold',
-        'orange',
-        'teal',
-        'skyblue',
-        'primary-light',
-        'success-light',
-        'danger-light',
-        'warning-light',
-        'info-light',
-        'magenta-light',
-        'volcano-light',
-        'cyan-light',
-        'geekblue-light',
-        'lime-light',
-        'gold-light',
-        'orange-light',
-        'teal-light',
-        'skyblue-light',
-      ],
-      control: { type: 'radio' },
+    colorSchema: {
+      options: Variants,
+      control: { type: 'select' },
     },
 
     loading: {

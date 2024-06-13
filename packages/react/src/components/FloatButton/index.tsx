@@ -6,11 +6,12 @@ export interface FloatButtonProps {
   title?: string
   titleDirection?: 'top' | 'right' | 'bottom' | 'left'
   children: React.ReactNode
-  variant?: Variants
+  colorSchema?: Variants
   size?: Sizes
   disabled?: boolean
   onClick?: () => void
   rounded?: boolean
+  style?: React.CSSProperties
 }
 
 export function FloatButton({

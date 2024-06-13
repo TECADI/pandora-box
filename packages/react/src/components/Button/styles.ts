@@ -56,10 +56,11 @@ export const ButtonContainer = styled.button<ButtonProps>`
 
   &:not(:disabled):hover {
     filter: brightness(
-      ${({ variant }) => (!variant?.includes('light') ? '1.09' : '0.97')}
+      ${({ colorSchema }) =>
+        !colorSchema?.includes('light') ? '1.09' : '0.97'}
     );
   }
 
   ${({ size }) => sizes[size || 'md']}
-  ${({ variant }) => getVariant({ variant })}
+  ${({ colorSchema }) => getVariant({ colorSchema })}
 `

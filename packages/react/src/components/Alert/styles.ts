@@ -22,8 +22,8 @@ export const AlertContainer = styled.div<AlertProps>`
     font-size: 1.45rem;
   }
 
-  ${({ variant, border }) => {
-    const variantStyles = getVariant({ variant })
+  ${({ colorSchema, border }) => {
+    const variantStyles = getVariant({ colorSchema })
     return `
       background-color: ${variantStyles.backgroundColor};
       color: ${variantStyles.color};

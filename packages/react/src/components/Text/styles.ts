@@ -3,6 +3,8 @@ import { styled } from '../../styles'
 import { colors } from '@pandora-box-tecadi/design-system'
 
 const sizeList = {
+  xxs: '0.625rem',
+  xs: '0.75rem',
   sm: '0.875rem',
   md: '1rem',
   lg: '1.125rem',
