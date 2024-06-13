@@ -5,6 +5,8 @@ export interface TextProps {
   as?: 'p' | 'span'
   color?: string
   size?:
+    | 'xxs'
+    | 'xs'
     | 'sm'
     | 'md'
     | 'lg'

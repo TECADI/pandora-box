@@ -1,5 +1,17 @@
 # @pandora-box-tecadi/design-system
 
+## 1.0.6
+
+### Patch Changes
+
+- update
+
+## 1.0.5
+
+### Patch Changes
+
+- fix table prop
+
 ## 1.0.4
 
 ### Patch Changes

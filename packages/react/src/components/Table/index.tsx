@@ -19,7 +19,7 @@ export interface TableProps extends TablePropsAntd {
   pagination?: {
     total: number
     pageSize: number
-    current: number
+    offset: number
     onChange: (page: number, pageSize: number) => void
   }
   style?: React.CSSProperties
@@ -31,6 +31,7 @@ export function Table(props: TableProps) {
       dataSource={props.dataSource}
       columns={props.columns}
       rowSelection={props.rowSelection}
+      pagination={props.pagination}
       {...props}
     />
   )
