@@ -9,6 +9,7 @@ export interface ButtonProps {
   loading?: boolean
   onClick?: () => void
   style?: React.CSSProperties
+  type?: 'button' | 'submit' | 'reset'
 }
 
 export function Button({ children, loading, disabled, ...props }: ButtonProps) {

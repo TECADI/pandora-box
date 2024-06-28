@@ -1,17 +1,22 @@
 import { Sizes, Variants } from '../../utils/types'
 import { InputComponent, PasswordComponent } from './styles'
 
-type InputTypes = 'text' | 'password' | 'email' | 'number' | 'tel'
+type InputTypes = 'text' | 'password'
 
 export interface InputProps {
-  value?: string
+  ref?: React.Ref<HTMLInputElement>
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  value?: any
   onChange?: (value: Event) => void
   placeholder?: string
   colorSchema?: Variants
+  style?: React.CSSProperties
 
   size?: Sizes
   direction?: 'row' | 'column'
   type?: InputTypes
+  maxLength?: number
+  disabled?: boolean
 }
 
 export function Input({ ...props }: InputProps) {
@@ -19,12 +24,6 @@ export function Input({ ...props }: InputProps) {
     switch (type) {
       case 'password':
         return <PasswordComponent {...props} />
-      case 'email':
-        return <InputComponent {...props} />
-      case 'number':
-        return <InputComponent {...props} />
-      case 'tel':
-        return <InputComponent {...props} />
       default:
         return <InputComponent {...props} />
     }

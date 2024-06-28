@@ -1,32 +1,57 @@
-import { Sizes } from '../../utils/types'
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { SelectComponent } from './styles'
 
 export interface SelectProps {
-  options?: {
-    value: string
-    label: string
-  }[]
+  value: any
+  options: { label: any; value: any }[]
+  onChange: (value: any) => void
 
-  value?: string
-  onChange?: (value: Event) => void
-
-  size?: Sizes
-  direction?: 'row' | 'column'
+  mode?: 'multiple' | 'tags' | undefined
+  showSearch?: boolean
+  style?: React.CSSProperties
+  placeholder?: string
+  dropdown?: React.ReactNode
 }
 
 export function Select({
-  onChange,
-  value,
-
+  showSearch,
+  style,
+  placeholder,
   options,
+  value,
+  onChange,
+  mode,
+  dropdown,
 }: SelectProps) {
-  return (
+  return dropdown ? (
     <SelectComponent
-      defaultValue={value}
-      onChange={onChange}
+      mode={mode}
+      showSearch={showSearch}
+      style={style}
+      placeholder={placeholder}
+      optionFilterProp="children"
+      filterOption={(input, option) => (option?.label ?? '').includes(input)}
       options={options}
+      value={value}
+      onChange={onChange}
+      dropdownRender={(menu) => (
+        <>
+          {menu}
+          {dropdown}
+        </>
+      )}
+    />
+  ) : (
+    <SelectComponent
+      mode={mode}
+      showSearch={showSearch}
+      style={style}
+      placeholder={placeholder}
+      optionFilterProp="children"
+      filterOption={(input, option) => (option?.label ?? '').includes(input)}
+      options={options}
+      value={value}
+      onChange={onChange}
     />
   )
 }
-
-Select.displayName = 'Select'
