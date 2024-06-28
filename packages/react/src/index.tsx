@@ -21,6 +21,7 @@ export * from './components/Checkbox'
 export * from './components/Select'
 export * from './components/MultiSelect'
 export * from './components/InputGroup'
+export * from './components/TextArea'
 
 // Typography
 export * from './components/Text'

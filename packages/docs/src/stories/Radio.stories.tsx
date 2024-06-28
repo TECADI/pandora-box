@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import {
   InputGroup,
   Radio,
-  RadioProps,
+  RadioGroupProps,
 } from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
@@ -14,6 +14,7 @@ export default {
     required: true,
     info: 'Selecione ao menos uma opção',
     size: 'md',
+    value: '1',
     options: [
       { value: '1', label: 'Option 1' },
       { value: '2', label: 'Option 2' },
@@ -43,6 +44,6 @@ export default {
       </InputGroup>
     ),
   ],
-} as Meta<RadioProps>
+} as Meta<RadioGroupProps>
 
-export const Primary: StoryObj<RadioProps> = {}
+export const Primary: StoryObj<RadioGroupProps> = {}

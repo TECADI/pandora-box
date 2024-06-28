@@ -1,47 +1,25 @@
-import { Sizes } from '../../utils/types'
-import { RadioComponent, RadioItem } from './styles'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { RadioButton, RadioGroupComponent } from './styles'
 
-export interface RadioProps {
-  options?: {
-    value: string
-    label: string
-  }[]
-
-  value?: string
-  onChange?: (value: Event) => void
-
-  size?: Sizes
-  direction?: 'row' | 'column'
+export interface RadioGroupProps {
+  value: string | number | boolean
+  onChange: (e: any) => void
+  options: { label: string; value: string | number | boolean }[]
 }
 
-export function Radio({
-  onChange,
-  value,
-  options,
-  size = 'md',
-  direction = 'column',
-}: RadioProps) {
+export function Radio({ value, options, onChange }: RadioGroupProps) {
   return (
-    <RadioComponent
+    <RadioGroupComponent
+      defaultValue={value}
+      size="large"
+      buttonStyle="solid"
       onChange={onChange}
-      style={{
-        display: 'flex',
-        alignItems: 'start',
-        flexDirection: direction,
-      }}
     >
-      {options?.map((option) => (
-        <RadioItem
-          key={option.value}
-          value={option.value}
-          checked={value === option.value}
-          size={size}
-        >
-          {option.label}
-        </RadioItem>
+      {options.map((item, index) => (
+        <RadioButton key={index} value={item.value}>
+          {item.label}
+        </RadioButton>
       ))}
-    </RadioComponent>
+    </RadioGroupComponent>
   )
 }
-
-Radio.displayName = 'Radio'

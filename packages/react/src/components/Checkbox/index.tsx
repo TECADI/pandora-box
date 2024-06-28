@@ -1,55 +1,18 @@
-import { Sizes } from '../../utils/types'
-import { CheckboxComponent, CheckboxItem } from './styles'
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { CheckboxGroupComponent } from './styles'
 
-export interface CheckboxProps {
-  label?: string
-  required?: boolean
-  info?: string
-
-  error?: string
-  placeholder?: string
-  options?: {
-    value: string
-    label: string
-  }[]
-
-  value?: string
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  onChange?: (value: any) => void
-
-  size?: Sizes
-  direction?: 'row' | 'column'
-  // variant?: 'default' | 'ghost'
+export interface CheckboxGroupProps {
+  value: string[] | number[] | boolean[]
+  onChange: (e: any) => void
+  options: { label: string; value: string | number | boolean }[]
 }
 
-export function Checkbox({
-  onChange,
-  value,
-  options,
-  size = 'md',
-  direction = 'column',
-}: CheckboxProps) {
+export function Checkbox({ value, options, onChange }: CheckboxGroupProps) {
   return (
-    <CheckboxComponent
+    <CheckboxGroupComponent
+      defaultValue={value}
       onChange={onChange}
-      style={{
-        display: 'flex',
-        alignItems: 'start',
-        flexDirection: direction,
-      }}
-    >
-      {options?.map((option) => (
-        <CheckboxItem
-          key={option.value}
-          value={option.value}
-          checked={value === option.value}
-          size={size}
-        >
-          {option.label}
-        </CheckboxItem>
-      ))}
-    </CheckboxComponent>
+      options={options}
+    ></CheckboxGroupComponent>
   )
 }
-
-Checkbox.displayName = 'Checkbox'

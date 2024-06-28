@@ -1,4 +1,4 @@
-import { styled, theme } from '../../styles'
+import { styled, keyframes } from '../../styles'
 import { colors } from '@pandora-box-tecadi/design-system'
 
 export const InputGroupComponent = styled.div`
@@ -9,13 +9,8 @@ export const InputGroupComponent = styled.div`
   font-family: 'Roboto', sans-serif;
 
   .required {
-    color: ${theme.colors.red400};
+    color: ${colors.red400};
   }
-`
-
-export const InputTitle = styled.div`
-  display: flex;
-  gap: 0.5rem;
 `
 
 export const Label = styled.label`
@@ -27,7 +22,35 @@ export const Label = styled.label`
   color: ${colors.slate700};
 `
 
-export const Error = styled.span`
-  font-size: 0.875rem;
-  color: ${theme.colors.red400};
+// create fade in animation
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+  
+`
+
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+`
+
+// create animation for error message to fade in
+export const Error = styled.span<{
+  show: boolean
+}>`
+  font-size: 0.75rem;
+  color: ${colors.red400};
+  animation: ${({ show }) => (show ? fadeIn : fadeOut)} 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  height: 1rem;
 `
