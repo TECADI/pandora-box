@@ -12,6 +12,7 @@ export default {
   args: {
     size: 'md',
     colorSchema: 'teal',
+    maxLength: 10,
   },
   argTypes: {
     onChange: { action: 'changed' },

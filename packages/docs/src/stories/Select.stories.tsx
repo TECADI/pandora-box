@@ -15,14 +15,23 @@ export default {
       { value: '2', label: 'Option 2' },
       { value: '3', label: 'Option 3' },
     ],
+    showSearch: false,
+    placeholder: 'Selecione uma opção',
+    mode: undefined,
   },
   argTypes: {
-    onChange: { action: 'changed' },
     options: { control: false },
+    placeholder: { control: false },
+    onChange: { control: false },
 
+    showSearch: { control: 'boolean' },
     size: {
       control: { type: 'radio' },
       options: ['sm', 'md', 'lg'],
+    },
+    mode: {
+      control: { type: 'radio' },
+      options: ['multiple', 'tags', undefined],
     },
   },
 

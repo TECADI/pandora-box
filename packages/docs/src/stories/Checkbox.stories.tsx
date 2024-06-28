@@ -1,5 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Checkbox, CheckboxProps } from '@pandora-box-tecadi/desing-ui-react'
+import {
+  Checkbox,
+  CheckboxGroupProps,
+} from '@pandora-box-tecadi/desing-ui-react'
 
 export default {
   title: 'Data Entry/Checkbox',
@@ -15,6 +18,8 @@ export default {
       { value: '2', label: 'Option 2' },
       { value: '3', label: 'Option 3' },
     ],
+    checkedItems: [1],
+    setCheckedItems: () => {},
   },
   argTypes: {
     onChange: { action: 'changed' },
@@ -27,6 +32,6 @@ export default {
       options: ['sm', 'md', 'lg'],
     },
   },
-} as Meta<CheckboxProps>
+} as Meta<CheckboxGroupProps>
 
-export const Primary: StoryObj<CheckboxProps> = {}
+export const Primary: StoryObj<CheckboxGroupProps> = {}
